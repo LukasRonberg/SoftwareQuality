@@ -1,0 +1,120 @@
+:root {
+    color-scheme: light;
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --border: #d8dde3;
+    --text: #1f2933;
+    --muted: #5f6c7a;
+    --accent: #2563eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    max-width: 860px;
+    margin: 28px auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+h1 {
+    margin: 0 0 14px;
+    font-size: 1.5rem;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.tab-button {
+    border: 1px solid var(--border);
+    background: #f8fafc;
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.tab-panel {
+    display: none;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.92rem;
+}
+
+input,
+select,
+button {
+    font: inherit;
+}
+
+input,
+select {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 7px;
+}
+
+button {
+    border: 0;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 10px;
+    min-height: 22px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.hint {
+    margin-top: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+}

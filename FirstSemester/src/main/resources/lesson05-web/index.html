@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lesson 05 Tools</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Lesson 05 Converters</h1>
+
+    <div class="tabs">
+        <button class="tab-button active" data-tab="length">Length</button>
+        <button class="tab-button" data-tab="weight">Weight</button>
+        <button class="tab-button" data-tab="temperature">Temperature</button>
+        <button class="tab-button" data-tab="currency">Currency</button>
+        <button class="tab-button" data-tab="grades">Grades</button>
+    </div>
+
+    <section id="length" class="tab-panel active">
+        <h2>Length</h2>
+        <div class="form-grid">
+            <label>Value <input id="length-value" type="number" step="0.01" value="10"></label>
+            <label>System
+                <select id="length-system">
+                    <option value="Metric">Metric (cm to in)</option>
+                    <option value="Imperial">Imperial (in to cm)</option>
+                </select>
+            </label>
+        </div>
+        <button id="length-run">Convert</button>
+        <p class="result" id="length-result"></p>
+    </section>
+
+    <section id="weight" class="tab-panel">
+        <h2>Weight</h2>
+        <div class="form-grid">
+            <label>Value <input id="weight-value" type="number" step="0.01" value="10"></label>
+            <label>System
+                <select id="weight-system">
+                    <option value="Metric">Metric (kg to lb)</option>
+                    <option value="Imperial">Imperial (lb to kg)</option>
+                </select>
+            </label>
+        </div>
+        <button id="weight-run">Convert</button>
+        <p class="result" id="weight-result"></p>
+    </section>
+
+    <section id="temperature" class="tab-panel">
+        <h2>Temperature</h2>
+        <div class="form-grid">
+            <label>Value <input id="temp-value" type="number" step="0.01" value="20"></label>
+            <label>From
+                <select id="temp-source">
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                    <option value="K">K</option>
+                </select>
+            </label>
+            <label>To
+                <select id="temp-destination">
+                    <option value="F">F</option>
+                    <option value="C">C</option>
+                    <option value="K">K</option>
+                </select>
+            </label>
+        </div>
+        <button id="temp-run">Convert</button>
+        <p class="result" id="temp-result"></p>
+    </section>
+
+    <section id="currency" class="tab-panel">
+        <h2>Currency</h2>
+        <div class="form-grid">
+            <label>Amount <input id="currency-amount" type="number" step="0.01" value="100"></label>
+            <label>Base (3-letter) <input id="currency-base" type="text" value="DKK" maxlength="3"></label>
+            <label>Destination (3-letter) <input id="currency-destination" type="text" value="USD" maxlength="3"></label>
+        </div>
+        <button id="currency-run">Convert</button>
+        <p class="result" id="currency-result"></p>
+    </section>
+
+    <section id="grades" class="tab-panel">
+        <h2>Grades</h2>
+        <p class="hint">The current <code>Grades</code> class has no methods yet.</p>
+        <button id="grades-run">Check Status</button>
+        <p class="result" id="grades-result"></p>
+    </section>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
