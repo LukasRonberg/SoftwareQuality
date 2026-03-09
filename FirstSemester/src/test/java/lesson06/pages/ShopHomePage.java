@@ -7,7 +7,6 @@ import static com.codeborne.selenide.Selenide.*;
 import static org.openqa.selenium.By.xpath;
 
 public class ShopHomePage {
-    private static final String PAGE_NAME = "index.html";
     private final static SelenideElement PAGE_TITLE =
             $(xpath("//h1"));
 
