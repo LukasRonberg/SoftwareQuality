@@ -11,9 +11,9 @@ public class SignUpAndLoginPage {
     private final SelenideElement EMAIL =
             $(xpath("//input[@type='email']"));
     private final SelenideElement PASSWORD =
-            $(xpath("//name[@type='password']"));
+            $(xpath("//input[@name='password']"));
     private final SelenideElement PASSWORD_REPEAT =
-            $(xpath("//name[@type='repeatPassword']"));
+            $(xpath("//input[@name='repeatPassword']"));
 
 
     public void clickSignUp(){
